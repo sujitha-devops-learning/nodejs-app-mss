@@ -1,6 +1,6 @@
-FROM node:10
-WORKDIR /usr/app
-COPY . .
+FROM node
+WORKDIR /app
+COPY . . 
 RUN npm install
 EXPOSE 9981
-CMD ["node","app.js"]
+CMD ["node" , "app.js"]
